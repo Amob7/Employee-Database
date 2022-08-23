@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+
 const choices = [
     "view all departments",
     "view all roles",
@@ -45,6 +46,7 @@ function run () {
                 console.log("How")
             }
         })
+        .catch((err) => console.log(err))
 }
 
 function viewDepartments() {
@@ -177,4 +179,4 @@ function addEmployee() {
         })
 }
 
-module.exports = run;
+module.exports = run();

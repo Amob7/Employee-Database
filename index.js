@@ -1,6 +1,5 @@
 const run = require('./helper/run')
 const mysql = require('mysql2');
-
 const db = mysql.createConnection(
   {
     host: 'localhost',
@@ -10,7 +9,6 @@ const db = mysql.createConnection(
   },
   console.log(`Connected to the employees_db`)
 );
-
 
 console.log(`
  _________________________________________
